@@ -1,0 +1,111 @@
+/* CSS body */
+
+body {
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    background-image: url("images/new york.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+/* CSS navbar */
+
+#navbar{
+     background-color: rgb(148, 106, 106);
+     border: 2px rgb(148, 106, 106) solid;
+}
+
+#navbar {
+    -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.473);
+    box-shadow: 0 15px 10px rgba(0, 0, 0, 0.473);
+}
+
+#navbar h2 {
+    color: lightgray;
+    font-family: Rotters, Helvetica, sans-serif;
+    font-size: 30px;
+    margin-left: 1em;
+}
+
+#navbutton1 {
+    display: inline;
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    left: 1190px;
+    top: 15px;
+    color: lightgray;
+    text-decoration: underline lightgray;
+    cursor: pointer;
+}
+
+nav #navbutton1:hover {
+    transition: 0.5s;
+    color: rgb(255, 255, 255);
+}
+
+#navbutton2 {
+    display: inline;
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    left: 1260px;
+    top: 15px;
+    color: lightgray;
+    text-decoration: underline lightgray;
+    cursor: pointer;
+}
+
+nav #navbutton2:hover {
+    transition: 0.5s;
+    color: rgb(255, 255, 255);
+}
+
+#navbutton3 {
+    display: inline;
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    left: 1330px;
+    top: 15px;
+    color: lightgray;
+    text-decoration: underline lightgray;
+    cursor: pointer;
+}
+
+nav #navbutton3:hover {
+    transition: 0.5s;
+    color: rgb(255, 255, 255);
+}
+
+/* CSS footer */
+
+footer {
+    position: fixed;
+    background-color: rgb(114, 76, 76);
+    border: 2px rgb(114, 76, 76) solid;
+    bottom: 0px;
+    width: 100vw;
+}
+
+footer h3 {
+    font-family: Rotters, Arial, Helvetica, sans-serif;
+    margin-left: 1em;
+    color: lightgray;
+}
+
+footer img {
+    margin: 0;
+    position: fixed;
+    height: 40px;
+    width: 40px;
+    left: 1385px;
+    bottom: 12px;
+}
+
+#mail {
+    margin: 0;
+    position: fixed;
+    height: 40px;
+    width: 40px;
+    left: 1340px;
+    bottom: 13px;
+}
