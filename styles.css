@@ -26,9 +26,10 @@ nav>img {
 }
 
 .nav-icon {
-    margin: 1em;
-    right: 10vw;
+    margin: 20px;
+    right: 12vw;
     width: 40px;
+    float: right;
 }
   
 .nav-icon:after, 
