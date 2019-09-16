@@ -1,4 +1,5 @@
 /* css html */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -31,23 +32,33 @@ body {
 
 #bg-image2 {
     width: 100%;
-    /* margin-top: -7px; */
 }
 
-.newsFlow {
-    position: absolute;
-    background-color: white;
+.newsContainer {
+    background-color: rgba(255, 255, 255, 0.8);
     display: flex;
-    top: 200px;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    overflow: scroll;
+    padding-top: 40px;
+    top: 190px;
     right: 40px;
     width: 30%;
     height: 70%;
-    border-radius: 6px;
+    border-radius: 3px;
 }
 
 #newspicture {
-    width: 60%;
-    justify-content: center;
+    width: 80%;
+    height: 30vh;
+    opacity: 1;
+    border-style: bottom;
+}
+
+#news {
+    margin: 15px 32px 8px 40px;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 
 /* css nav */
@@ -68,26 +79,6 @@ nav img {
     align-self: center;
     cursor: pointer;    
 }
-
-/* #galleri {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    margin-right: 16px;
-    list-style: none;
-    display: grid;
-    align-items: start;
-    justify-content: end;
-}
-
-#contact {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    margin-right: 16px;
-    list-style: none;
-    display: grid;
-    align-items: start;
-    justify-items: center;
-} */
 
 .nav-icon {
     margin-right: 40px;
@@ -123,6 +114,7 @@ nav img {
 /* css footer */
 
 footer {
+    position: relative;
     margin: 0;
     background-color: rgb(70, 70, 70);
     bottom: 0;
@@ -131,7 +123,7 @@ footer {
 }
 
 .footerText {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
     font-size: 14px;
     color: #ccc;
     margin-top: 0;
@@ -145,19 +137,139 @@ footer {
 .plugicons {
     position: absolute;
     display: grid;
-    grid-column-gap: 3px;
+    grid-column-gap: 5px;
     grid-template-areas:
     "items items items";
 }
 
-#instagram {
-    margin-top: 40px;
-    margin-left: 8px;
+.items {
+    margin-top: 30px;
+    margin-left: 10px;
     cursor: pointer;
 }
 
-/* #facebook {
-    margin-bottom: 10px;
-    margin-left: 10px;
-    cursor: pointer;
-}  */
+/* css querie 600px & less */
+
+@media only screen and (max-width: 600px){
+    nav {
+        background-color: rgb(70, 70, 70, 0.80);
+        width: 100%;
+        height: 7vh;
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        top: 0;
+        box-shadow: 15px 15px 30px rgb(34, 34, 34);
+    }  
+}
+
+@media only screen and (max-width: 600px) {
+    .nav-icon {
+        margin-right: 30px;
+        margin-top: 13px;
+        width: 30px;
+        float: right;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .nav-icon:after, 
+    .nav-icon:before, 
+    .nav-icon div {
+        background-color: #fff;
+        border-radius: 3px;
+        content: '';
+        display: block;
+        height: 3.5px;
+        margin: 7px 0;
+        transition: all .2s ease-in-out;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    nav img {
+        width: 15%;
+        align-self: center;
+        cursor: pointer;    
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    footer {
+        position: relative;
+        margin: 0;
+        background-color: rgb(70, 70, 70);
+        bottom: 0;
+        width: 100vw;
+        height: 110vw;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .newsContainer {
+        background-color: rgba(255, 255, 255, 0.8);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        overflow: scroll;
+        padding-top: 40px;
+        top: 90px;
+        right: 10px;
+        width: 70%;
+        height: 30%;
+        border-radius: 3px;
+    }
+    #newspicture {
+        width: 80%;
+        height: 30vh;
+        margin-top: -13px;
+        opacity: 1;
+        border-style: bottom;
+    }
+}
+
+/* css querie 600 & more */
+
+@media only screen and (max-width: 800px) {
+    nav img {
+        width: 15%;
+        align-self: center;
+        cursor: pointer;    
+    }
+}
+
+@media only screen and (min-width and max-width: 800px) {
+    footer {
+        position: relative;
+        margin: 0;
+        background-color: rgb(70, 70, 70);
+        bottom: 0;
+        width: 100vw;
+        height: 6vw;
+    }
+}
+
+@media only screen and (min-width and max-width: 1000px) {
+    .newsContainer {
+        background-color: rgba(255, 255, 255, 0.8);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        overflow: scroll;
+        padding-top: 40px;
+        top: 130px;
+        right: 10px;
+        width: 50%;
+        height: 60%;
+        border-radius: 3px;
+    }
+    #newspicture {
+        width: 80%;
+        height: 30vh;
+        margin-top: 4px;
+        opacity: 1;
+        border-style: bottom;
+    }
+}
