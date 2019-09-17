@@ -42,8 +42,8 @@ body {
     position: absolute;
     overflow: scroll;
     padding-top: 40px;
-    top: 190px;
-    right: 40px;
+    top: 140px;
+    right: 190px;
     width: 30%;
     height: 70%;
     border-radius: 3px;
@@ -53,7 +53,6 @@ body {
     width: 80%;
     height: 30vh;
     opacity: 1;
-    border-style: bottom;
 }
 
 #news {
@@ -80,36 +79,46 @@ nav img {
     cursor: pointer;    
 }
 
-.nav-icon {
-    margin-right: 40px;
-    margin-top: 32px;
-    width: 40px;
-    float: right;
-}
-  
-.nav-icon:after, 
-.nav-icon:before, 
-.nav-icon div {
-    background-color: #fff;
-    border-radius: 3px;
-    content: '';
-    display: block;
-    height: 5px;
-    margin: 7px 0;
-    transition: all .2s ease-in-out;
+/* css hamburger menu */
+
+.menu {
+    margin: 30px 100px 0 0;
+    text-align: center;
+    width: 100%;
+    display: none;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 
-.nav-icon:hover:before {
-    transform: translateY(12px) rotate(135deg);
-  }
-  
-.nav-icon:hover:after {
-    transform: translateY(-12px) rotate(-135deg);
+.menu a {
+    clear: right;
+    text-decoration: none;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-right: 8px;
+    line-height: 70px;
+    display: block;
+    border-bottom: 1px solid black;
 }
-  
-.nav-icon:hover div {
-    transform: scale(0);
- }
+
+label {
+    margin-top: 20px;
+    margin-right: 60px;
+    width: 26px;
+    float: right;
+    font-size: 60px;
+    line-height: 70px;
+    display: block;
+    cursor: pointer;
+    color:  rgba(255, 255, 255, 0.8); 
+}
+
+#toggle {
+    display: none;
+}
+
+#toggle:checked + .menu {
+    display: block;
+}
 
 /* css footer */
 
@@ -119,7 +128,7 @@ footer {
     background-color: rgb(70, 70, 70);
     bottom: 0;
     width: 100vw;
-    height: 15vw;
+    height: 35vw;
 }
 
 .footerText {
@@ -142,15 +151,23 @@ footer {
     "items items items";
 }
 
+.googlemaps {
+    position: absolute;
+    left: 1vw;
+    bottom: 7vh;
+}
+
 .items {
     margin-top: 30px;
     margin-left: 10px;
     cursor: pointer;
 }
 
-/* css querie 600px & less */
+/* ----- Queries for different devices! ----- */
 
-@media only screen and (max-width: 600px){
+/* queries for 400px */
+
+@media only screen and (max-width: 400px){
     nav {
         background-color: rgb(70, 70, 70, 0.80);
         width: 100%;
@@ -160,41 +177,53 @@ footer {
         position: fixed;
         top: 0;
         box-shadow: 15px 15px 30px rgb(34, 34, 34);
-    }  
-}
-
-@media only screen and (max-width: 600px) {
-    .nav-icon {
-        margin-right: 30px;
-        margin-top: 13px;
-        width: 30px;
-        float: right;
     }
-}
 
-@media only screen and (max-width: 600px) {
-    .nav-icon:after, 
-    .nav-icon:before, 
-    .nav-icon div {
-        background-color: #fff;
-        border-radius: 3px;
-        content: '';
-        display: block;
-        height: 3.5px;
-        margin: 7px 0;
-        transition: all .2s ease-in-out;
-    }
-}
-
-@media only screen and (max-width: 600px) {
     nav img {
         width: 15%;
         align-self: center;
         cursor: pointer;    
     }
-}
 
-@media only screen and (max-width: 600px) {
+    .menu {
+        text-align: center;
+        width: 50%;
+        display: none;
+        font-family: Roboto, Arial, Helvetica, sans-serif;
+    }
+    
+    .menu a {
+        font-size: 10px;
+        clear: right;
+        text-decoration: none;
+        color: black;
+        background-color: rgba(255, 255, 255, 0.8);
+        margin-right: -35px;
+        line-height: 45px;
+        display: block;
+        border-bottom: 1px solid black;
+    }
+    
+    label {
+        margin-top: -15px;
+        margin-right: 20px;
+        width: 26px;
+        float: right;
+        font-size: 36px;
+        line-height: 70px;
+        display: block;
+        cursor: pointer;
+        color:  rgba(255, 255, 255, 0.8); 
+    }
+    
+    #toggle {
+        display: none;
+    }
+    
+    #toggle:checked + .menu {
+        display: block;
+    }
+
     footer {
         position: relative;
         margin: 0;
@@ -203,9 +232,113 @@ footer {
         width: 100vw;
         height: 110vw;
     }
+
+    .googlemaps {
+        position: absolute;
+        width: 50%;
+        height: 50%;
+        left: 5vw;
+        bottom: 7vh;
+    }
+
+    .newsContainer {
+        background-color: rgba(255, 255, 255, 0.8);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        overflow: scroll;
+        padding-top: 40px;
+        top: 50px;
+        left: 10px;
+        width: 55%;
+        height: 30%;
+        border-radius: 3px;
+    }
+
+    #newspicture {
+        width: 80%;
+        height: 30vh;
+        margin-top: -13px;
+        opacity: 1;
+    }
 }
 
-@media only screen and (max-width: 600px) {
+/* css querie for minimum 400px & maximum 600px */
+
+@media only screen and (min-width: 400px) and (max-width: 600px){
+    nav {
+        background-color: rgb(70, 70, 70, 0.80);
+        width: 100%;
+        height: 7vh;
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        top: 0;
+        box-shadow: 15px 15px 30px rgb(34, 34, 34);
+    }
+
+    nav img {
+        width: 15%;
+        align-self: center;
+        cursor: pointer;    
+    }
+    .menu {
+        margin-top: 30px;
+        text-align: center;
+        width: 50%;
+        display: none;
+        font-family: Roboto, Arial, Helvetica, sans-serif;
+    }
+    
+    .menu a {
+        clear: right;
+        text-decoration: none;
+        color: black;
+        background-color: rgba(255, 255, 255, 0.8);
+        margin-right: -56px;
+        line-height: 70px;
+        display: block;
+        border-bottom: 1px solid black;
+    }
+    
+    label {
+        margin-top: -3px;
+        margin-right: 40px;
+        width: 26px;
+        float: right;
+        font-size: 50px;
+        line-height: 70px;
+        display: block;
+        cursor: pointer;
+        color:  rgba(255, 255, 255, 0.8); 
+    }
+    
+    #toggle {
+        display: none;
+    }
+    
+    #toggle:checked + .menu {
+        display: block;
+    }
+
+    footer {
+        position: relative;
+        margin: 0;
+        background-color: rgb(70, 70, 70);
+        bottom: 0;
+        width: 100vw;
+        height: 130vw;
+    }
+
+    .googlemaps {
+        position: absolute;
+        width: 60%;
+        height: 60%;
+        left: 3vw;
+        bottom: 2vh;
+    }
+
     .newsContainer {
         background-color: rgba(255, 255, 255, 0.8);
         display: flex;
@@ -215,42 +348,96 @@ footer {
         overflow: scroll;
         padding-top: 40px;
         top: 90px;
-        right: 10px;
-        width: 70%;
+        left: 10px;
+        width: 60%;
         height: 30%;
         border-radius: 3px;
     }
+
     #newspicture {
         width: 80%;
         height: 30vh;
         margin-top: -13px;
         opacity: 1;
-        border-style: bottom;
     }
 }
 
-/* css querie 600 & more */
+/* css querie minimum 600px and maximum 800px */
 
-@media only screen and (max-width: 800px) {
+@media only screen and (min-width: 600px) and (max-width: 800px){
+    nav {
+        background-color: rgb(70, 70, 70, 0.80);
+        width: 100%;
+        height: 7vh;
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        top: 0;
+        box-shadow: 15px 15px 30px rgb(34, 34, 34);
+    }
+
     nav img {
-        width: 15%;
+        width: 13%;
         align-self: center;
         cursor: pointer;    
     }
-}
 
-@media only screen and (min-width and max-width: 800px) {
+    .menu {
+        margin: 30px 100px 0 0;
+        text-align: center;
+        width: 100%;
+        display: none;
+        font-family: Roboto, Arial, Helvetica, sans-serif;
+    }
+    
+    .menu a {
+        clear: right;
+        text-decoration: none;
+        color: black;
+        background-color: rgba(255, 255, 255, 0.8);
+        margin-right: 8px;
+        line-height: 70px;
+        display: block;
+        border-bottom: 1px solid black;
+    }
+    
+    label {
+        margin-top: 0px;
+        margin-right: 50px;
+        width: 26px;
+        float: right;
+        font-size: 50px;
+        line-height: 70px;
+        display: block;
+        cursor: pointer;
+        color:  rgba(255, 255, 255, 0.8); 
+    }
+    
+    #toggle {
+        display: none;
+    }
+    
+    #toggle:checked + .menu {
+        display: block;
+    }
+
     footer {
         position: relative;
         margin: 0;
         background-color: rgb(70, 70, 70);
         bottom: 0;
         width: 100vw;
-        height: 6vw;
+        height: 110vw;
     }
-}
 
-@media only screen and (min-width and max-width: 1000px) {
+    .googlemaps {
+        position: absolute;
+        width: 70%;
+        height: 70%;
+        left: 2vw;
+        bottom: 7vh;
+    }
+
     .newsContainer {
         background-color: rgba(255, 255, 255, 0.8);
         display: flex;
@@ -259,17 +446,17 @@ footer {
         position: absolute;
         overflow: scroll;
         padding-top: 40px;
-        top: 130px;
-        right: 10px;
+        top: 90px;
+        right: 190px;
         width: 50%;
-        height: 60%;
+        height: 42%;
         border-radius: 3px;
     }
+
     #newspicture {
         width: 80%;
         height: 30vh;
-        margin-top: 4px;
+        margin-top: -13px;
         opacity: 1;
-        border-style: bottom;
     }
 }
