@@ -14,23 +14,49 @@
 
   <body>
     <div id="background">
-      <img id="bg-image" style="display: block;" alt="Lamborghini Hurácan" src="images/huracanroadster.jpg">
-      <img id="bg-image2" style="display: block;" alt="Lamborghini Gallardo" src="images/centenario.jpg">
+      <img id="bg-image" style="display: block;" alt="Lamborghini Hurácan" src="images/centenario.jpg">
+      <img id="bg-image2" style="display: block;" alt="Lamborghini Gallardo" src="images/lamborghiniaventador.jpg">
     </div>
-    
+
     <nav>
       <img src="images/icon_images/Lamborghini-logo-v3.png" alt="Lamborghini button">
       <div class="nav">
-        <label for="toggle">&#9776</label>
+        <label for="toggle">&#9776;</label>
         <input type="checkbox" id="toggle">
         <div class="menu">
           <a href="index.html">Homepage</a>
           <a href="galleri.html">Galleri</a>
-          <a href="#">Whatever</a>
         </div>
       </div>
     </nav>
     
+      <div class="contactContainer">
+        <div class="container">
+          <form action="mailto:muzenjak57@gmail.com" method="post" enctype="text/plain">
+          
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="First Name" placeholder="Your name..">
+          
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="Last Name" placeholder="Your last name..">
+          
+            <label for="country">Country</label>
+            <select id="country" name="country">
+              <option value="Sweden">Sweden</option>
+              <option value="Italy">Italy</option>
+              <option value="USA">USA</option>
+            </select>
+          
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="Subject" placeholder="Write something.." style="height:200px"></textarea>
+
+          <input type="submit" value="Send">
+           
+        </form>
+      </div> 
+    </div>
+      
+
     <footer>
       <div class="footerText">
         <p>Lamborghini &#174;</p>
