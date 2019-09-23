@@ -49,19 +49,19 @@ body {
   border-radius: 3px;
 }
 
-#newspicture {
+.newspicture {
   width: 80%;
   height: 30vh;
   opacity: 1;
   padding: 8px;
 }
 
-#newsTitle {
+.newsTitle {
   padding: 10px;
   font-family: Roboto, Arial, Helvetica, sans-serif
 }
 
-#news {
+.news {
   margin: 15px 32px 8px 40px;
   font-family: Roboto, Arial, Helvetica, sans-serif;
 }

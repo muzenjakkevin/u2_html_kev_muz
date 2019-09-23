@@ -41,7 +41,6 @@ body {
   align-items: center;
   position: absolute;
   overflow: scroll;
-  padding-top: 40px;
   top: 140px;
   right: 200px;
   width: 70%;
@@ -51,18 +50,42 @@ body {
 
 .galleriGrid {
   display: grid;
-  grid-gap: 0;
-  margin-top: 45px;
-  margin-left: 80px;
+  grid-gap: 3px;
+  margin: 8px;
+  padding-bottom: 8px;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 33.4% 33.4% 33.4;
 }
 
-.galleriImage {
-  position: relative;
-  width: 90%;
-  grid-template-areas:
-  "items"
-  "items"
-  "items";
+.image {
+  width: 100%;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.image2 {
+  width: 100%;
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.image3 {
+  width: 100%;
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.image4 {
+  width: 100%;
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.image5 {
+  width: 100%;
+  grid-column: 1/2;
+  grid-row: 3/3;
+}
+.image6 {
+  width: 100%;
+  grid-column: 2/3;
+  grid-row: 3/3;
 }
 
 /* css nav */
@@ -257,26 +280,48 @@ footer {
     top: 80px;
     left: 10px;
     width: 55%;
-    height: 30%;
+    height: 28%;
     border-radius: 3px;
   }
 
   .galleriGrid {
     display: grid;
-    grid-gap: 0;
-    margin: 0;
-    padding-top: 8.8px;
-    padding-bottom: 8.8px;
+    grid-gap: 3px;
+    margin: 8px;
+    padding-bottom: 8px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 33.4% 33.4% 33.4;
   }
   
-  .galleriImage {
-    left: 8.8px;
-    position: relative;
-    width: 90%;
-    grid-template-areas:
-    "items"
-    "items"
-    "items";
+  .image {
+    width: 100%;
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .image2 {
+    width: 100%;
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .image3 {
+    width: 100%;
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .image4 {
+    width: 100%;
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .image5 {
+    width: 100%;
+    grid-column: 1/2;
+    grid-row: 3/3;
+  }
+  .image6 {
+    width: 100%;
+    grid-column: 2/3;
+    grid-row: 3/3;
   }
 }
 
@@ -366,26 +411,48 @@ footer {
     top: 100px;
     left: 10px;
     width: 60%;
-    height: 30%;
+    height: 24.5%;
     border-radius: 3px;
   }
 
   .galleriGrid {
     display: grid;
-    grid-gap: 0;
-    margin: 0;
-    padding-top: 12.425px;
-    padding-bottom: 12.425px;
+    grid-gap: 3px;
+    margin: 8px;
+    padding-bottom: 8px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 33.4% 33.4% 33.4;
   }
   
-  .galleriImage {
-    left: 12.425px;
-    position: relative;
-    width: 90%;
-    grid-template-areas:
-    "items"
-    "items"
-    "items";
+  .image {
+    width: 100%;
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .image2 {
+    width: 100%;
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .image3 {
+    width: 100%;
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .image4 {
+    width: 100%;
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .image5 {
+    width: 100%;
+    grid-column: 1/2;
+    grid-row: 3/3;
+  }
+  .image6 {
+    width: 100%;
+    grid-column: 2/3;
+    grid-row: 3/3;
   }
 }
 
@@ -476,25 +543,86 @@ footer {
     top: 90px;
     right: 190px;
     width: 50%;
-    height: 42%;
+    height: 32.5%;
     border-radius: 3px;
   }
 
   .galleriGrid {
     display: grid;
-    grid-gap: 0;
-    margin: 0;
-    padding-top: 19.2px;
-    padding-bottom: 19.2px;
+    grid-gap: 3px;
+    margin: 8px;
+    padding-bottom: 8px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 33.4% 33.4% 33.4;
   }
   
-  .galleriImage {
-    left: 19.2px;
-    position: relative;
-    width: 90%;
-    grid-template-areas:
-    "items"
-    "items"
-    "items";
+  .image {
+    width: 100%;
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .image2 {
+    width: 100%;
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .image3 {
+    width: 100%;
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .image4 {
+    width: 100%;
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .image5 {
+    width: 100%;
+    grid-column: 1/2;
+    grid-row: 3/3;
+  }
+  .image6 {
+    width: 100%;
+    grid-column: 2/3;
+    grid-row: 3/3;
+  }
+  .galleriGrid {
+    display: grid;
+    grid-gap: 3px;
+    margin: 8px;
+    padding-bottom: 8px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 33.4% 33.4% 33.4;
+  }
+  
+  .image {
+    width: 100%;
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .image2 {
+    width: 100%;
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .image3 {
+    width: 100%;
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .image4 {
+    width: 100%;
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .image5 {
+    width: 100%;
+    grid-column: 1/2;
+    grid-row: 3/3;
+  }
+  .image6 {
+    width: 100%;
+    grid-column: 2/3;
+    grid-row: 3/3;
   }
 }
